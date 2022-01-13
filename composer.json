@@ -1,6 +1,6 @@
 {
     "name": "frosh/product-compare",
-    "description": "A Simple Product Compare plugin for Shopware 6",
+    "description": "WhatsApp plugin for Shopware 6",
     "version": "1.2.1",
     "type": "shopware-platform-plugin",
     "license": "MIT",
@@ -24,11 +24,11 @@
         "copyright": "(c) by Justa Vin<levienthuong@gmail.com>",
         "label": {
             "de-DE": "Ein einfaches Produktvergleichs-Plugin für Shopware 6",
-            "en-GB": "A Simple Product Compare plugin for Shopware 6"
+            "en-GB": "A WhatsApp plugin for Shopware 6"
         },
         "description": {
             "de-DE": "Kostenloses Open Source Plugin für Shopware 6. Ermöglicht es bis zu 4 Produkte miteinander zu vergleichen. Vergleichsliste auf der Produktvergleichsseite oder auf der Artikelseite.",
-            "en-GB": "Free Shopware 6 open source extension which allows to compare up to 4 products with each other. Show compare list in products compare page or in product detail's cross-selling."
+            "en-GB": "Shopware 6 order via WhatApp plugin."
         },
         "manufacturerLink": {
             "de-DE": "https://github.com/FriendsOfShopware/FroshProductCompare",
