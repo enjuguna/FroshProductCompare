@@ -6,8 +6,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "FriendsOfShopware",
-            "email": "info@friendsofshopware.com"
+            "name": "Eric Njuguna",
+            "email": "eric.njuguna"
         },
         {
             "name": "Thuong Le",
@@ -28,7 +28,7 @@
         },
         "description": {
             "de-DE": "Kostenloses Open Source Plugin für Shopware 6. Ermöglicht es bis zu 4 Produkte miteinander zu vergleichen. Vergleichsliste auf der Produktvergleichsseite oder auf der Artikelseite.",
-            "en-GB": "Shopware 6 order via WhatApp plugin."
+            "en-GB": "Shopware 6 Order on WhatApp plugin."
         },
         "manufacturerLink": {
             "de-DE": "https://github.com/FriendsOfShopware/FroshProductCompare",
