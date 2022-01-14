@@ -5,15 +5,22 @@
         {% set addToCompareOptions = {
             productId: product.id,
             productName: product.name,
-            productNumber: product.number,
+            productPrice: product.price,
+            productNumber: product.product_number,
             showIconOnly: showIconOnly,
             defaultText: "froshProductCompare.general.addToCompare"|trans|sw_sanitize,
             addedText: "froshProductCompare.general.removeFromCompare"|trans|sw_sanitize
         } %}
+        {{ dump(product.id) }}
+        {{ dump(product.name) }}
+        {{ dump(product.productNumber) }}
+        {{ dump(product.Price) }}
+
+
         {% block frosh_product_compare_add_to_compare_button %}
             {% if showIconOnly %}
                 <button 
-                        onclick="window.location.href='https://https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20information%20on%20this%20product%20{{product.name}}%3A%20';"
+                        onclick="window.open('https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20information%20on%20this%20product%20{{product.name}}%20({{product.productNumber}})%20','_blank');"
                         class="btn btn-block btn-compare"
                         href="{{ seoUrl('frontend.detail.page', {'productId': product.id}) }}#review-tab-pane"
                         title="{{ "froshProductCompare.general.addToCompare"|trans|striptags }}">
@@ -21,7 +28,7 @@
                 </button>
             {% else %}
                 <button 
-                        onclick="window.location.href='https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20information%20on%20this%20product%20{{product.name}}%3A%20';"
+                        onclick="window.open('https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20information%20on%20this%20product%20{{product.name}}%20({{product.productNumber}})%20','_blank');"
                         href="{{ seoUrl('frontend.detail.page', {'productId': product.id}) }}#review-tab-pane"
                         class="btn btn-block btn-compare"
                         title="{{ "froshProductCompare.general.addToCompare"|trans|striptags }}">
