@@ -2,8 +2,8 @@
     "froshProductCompare": {
         "general": {
             "headline": "Compare products",
-            "addToCompare": "Order Via Whatsapp",
-            "removeFromCompare": "Order Via Whatsapp",
+            "addToCompare": "Order on Whatsapp",
+            "removeFromCompare": "Order on Whatsapp",
             "maximumCompareProducts": "Maximum number of compare products is 4",
             "empty": "No product is added to compare"
         },
