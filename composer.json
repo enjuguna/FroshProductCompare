@@ -1,5 +1,5 @@
 {
-    "name": "frosh/product-compare",
+    "name": "kware/product-compare",
     "description": "WhatsApp plugin for Shopware 6",
     "version": "1.4.1",
     "type": "shopware-platform-plugin",
@@ -19,7 +19,7 @@
         "shopware/storefront": "^6.4"
     },
     "extra": {
-        "shopware-plugin-class": "Frosh\\FroshProductCompare\\FroshProductCompare",
+        "shopware-plugin-class": "Kware\\KwareProductCompare\\KwareProductCompare",
         "plugin-icon": "src/Resources/config/plugin.png",
         "copyright": "(c) by Justa Vin<levienthuong@gmail.com>",
         "label": {
@@ -31,17 +31,17 @@
             "en-GB": "Shopware 6 order via WhatApp plugin."
         },
         "manufacturerLink": {
-            "de-DE": "https://github.com/FriendsOfShopware/FroshProductCompare",
-            "en-GB": "https://github.com/FriendsOfShopware/FroshProductCompare"
+            "de-DE": "https://github.com/FriendsOfShopware/KwareProductCompare",
+            "en-GB": "https://github.com/FriendsOfShopware/KwareProductCompare"
         },
         "supportLink": {
-            "de-DE": "https://github.com/FriendsOfShopware/FroshProductCompare/issues",
-            "en-GB": "https://github.com/FriendsOfShopware/FroshProductCompare/issues"
+            "de-DE": "https://github.com/FriendsOfShopware/KwareProductCompare/issues",
+            "en-GB": "https://github.com/FriendsOfShopware/KwareProductCompare/issues"
         }
     },
     "autoload": {
         "psr-4": {
-            "Frosh\\FroshProductCompare\\": "src/"
+            "Kware\\KwareProductCompare\\": "src/"
         }
     },
     "conflict": {

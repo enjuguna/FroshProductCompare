@@ -6,16 +6,16 @@
     <services>
 
         <!-- Entity Extension-->
-        <service id="Frosh\FroshProductCompare\DAL\Extension\ProductCrossSellingEntityExtension">
+        <service id="Kware\KwareProductCompare\DAL\Extension\ProductCrossSellingEntityExtension">
             <tag name="shopware.entity.extension"/>
         </service>
 
         <!-- Entity Definitions-->
-        <service id="Frosh\FroshProductCompare\CrossSellingComparable\CrossSellingComparableDefinition">
-            <tag name="shopware.entity.definition" entity="frosh_cross_selling_comparable"/>
+        <service id="Kware\KwareProductCompare\CrossSellingComparable\CrossSellingComparableDefinition">
+            <tag name="shopware.entity.definition" entity="kware_cross_selling_comparable"/>
         </service>
 
-        <service id="Frosh\FroshProductCompare\Page\CompareProductPageLoader">
+        <service id="Kware\KwareProductCompare\Page\CompareProductPageLoader">
             <argument type="service" id="Shopware\Core\Content\Product\Cart\ProductGateway"/>
             <argument type="service" id="Shopware\Storefront\Page\GenericPageLoader"/>
             <argument type="service" id="Symfony\Component\EventDispatcher\EventDispatcherInterface" />
@@ -23,8 +23,8 @@
             <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
         </service>
 
-        <service id="Frosh\FroshProductCompare\Controller\CompareProductController" public="true">
-            <argument type="service" id="Frosh\FroshProductCompare\Page\CompareProductPageLoader"/>
+        <service id="Kware\KwareProductCompare\Controller\CompareProductController" public="true">
+            <argument type="service" id="Kware\KwareProductCompare\Page\CompareProductPageLoader"/>
             <argument type="service" id="Shopware\Storefront\Page\GenericPageLoader"/>
             <call method="setContainer">
                 <argument type="service" id="service_container"/>
@@ -32,13 +32,13 @@
         </service>
 
         <!-- Subscriber -->
-        <service id="Frosh\FroshProductCompare\Subscriber\FroshCrossSellingProductListingSubscriber">
-            <argument type="service" id="Frosh\FroshProductCompare\Page\CompareProductPageLoader"/>
+        <service id="Kware\KwareProductCompare\Subscriber\KwareCrossSellingProductListingSubscriber">
+            <argument type="service" id="Kware\KwareProductCompare\Page\CompareProductPageLoader"/>
             <argument type="service" id="Shopware\Core\Content\Product\Cart\ProductGateway"/>
             <tag name="kernel.event_subscriber"/>
         </service>
 
-        <service id="Frosh\FroshProductCompare\Subscriber\FroshProductGatewayCriteriaSubscriber">
+        <service id="Kware\KwareProductCompare\Subscriber\KwareProductGatewayCriteriaSubscriber">
             <tag name="kernel.event_subscriber"/>
         </service>
 

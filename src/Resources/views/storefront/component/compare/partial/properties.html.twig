@@ -1,10 +1,10 @@
-{% block frosh_product_compare_properties_cells %}
+{% block kware_product_compare_properties_cells %}
     {% for product in products %}
         {% set matchProperty = false %}
         {% for group in product.sortedProperties %}
             {% if group.id == linePropertyId %}
                 {% set matchProperty = true %}
-                {% block frosh_product_compare_properties_cell %}
+                {% block kware_product_compare_properties_cell %}
                     <td class="properties-value">
                         {% apply spaceless %}
                             {% for option in group.options %}
@@ -21,7 +21,7 @@
         {% endfor %}
         {% if not matchProperty %}
             <td class="properties-value">
-                {% block frosh_product_compare_properties_item_notset %}
+                {% block kware_product_compare_properties_item_notset %}
                     <span>N/A</span>
                 {% endblock %}
             </td>

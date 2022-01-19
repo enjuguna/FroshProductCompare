@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Frosh\FroshProductCompare\Subscriber;
+namespace Kware\KwareProductCompare\Subscriber;
 
-use Frosh\FroshProductCompare\CrossSellingComparable\CrossSellingComparableEntity;
-use Frosh\FroshProductCompare\Page\CompareProductPageLoader;
+use Kware\KwareProductCompare\CrossSellingComparable\CrossSellingComparableEntity;
+use Kware\KwareProductCompare\Page\CompareProductPageLoader;
 use Shopware\Core\Content\Product\Cart\ProductGatewayInterface;
 use Shopware\Core\Content\Product\Events\ProductCrossSellingCriteriaEvent;
 use Shopware\Core\Content\Product\Events\ProductCrossSellingIdsCriteriaEvent;
@@ -18,7 +18,7 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\NotFilter;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-class FroshCrossSellingProductListingSubscriber implements EventSubscriberInterface
+class KwareCrossSellingProductListingSubscriber implements EventSubscriberInterface
 {
     private CompareProductPageLoader $compareProductPageLoader;
 

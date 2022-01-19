@@ -1,6 +1,6 @@
 import template from './sw-product-cross-selling-form.html.twig';
 import './sw-product-cross-selling-form.scss';
-import { MAXIMUM_COMPARE_PRODUCT_ITEMS } from '../../../../constant/frosh-product-compare.constant';
+import { MAXIMUM_COMPARE_PRODUCT_ITEMS } from '../../../../constant/kware-product-compare.constant';
 
 const { Component, Utils } = Shopware;
 
@@ -28,7 +28,7 @@ Component.override('sw-product-cross-selling-form', {
 
         if (!crossSellingComparable) {
             crossSellingComparable =
-                this.repositoryFactory.create('frosh_cross_selling_comparable').create(Shopware.Context.api);
+                this.repositoryFactory.create('kware_cross_selling_comparable').create(Shopware.Context.api);
             crossSellingComparable.isComparable = false;
             this.crossSelling.extensions.crossSellingComparable = crossSellingComparable;
         }

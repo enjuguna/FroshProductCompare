@@ -1,6 +1,6 @@
 <?php
 
-namespace Frosh\FroshProductCompare\Page;
+namespace Kware\KwareProductCompare\Page;
 
 use Shopware\Core\Content\Product\SalesChannel\Listing\ProductListingResult;
 use Shopware\Core\Content\Property\PropertyGroupCollection;

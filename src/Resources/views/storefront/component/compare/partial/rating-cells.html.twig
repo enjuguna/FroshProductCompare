@@ -1,6 +1,6 @@
-{% block frosh_product_compare_rating_cells %}
+{% block kware_product_compare_rating_cells %}
     {% for product in products %}
-        {% block frosh_product_compare_rating_cell %}
+        {% block kware_product_compare_rating_cell %}
             <td>
                 {% sw_include '@Storefront/storefront/component/review/rating.html.twig' with {
                     points: product.ratingAverage,

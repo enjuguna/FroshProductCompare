@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Frosh\FroshProductCompare\CrossSellingComparable;
+namespace Kware\KwareProductCompare\CrossSellingComparable;
 
 use Shopware\Core\Framework\DataAbstractionLayer\EntityCollection;
 
@@ -17,7 +17,7 @@ class CrossSellingComparableCollection extends EntityCollection
 {
     public function getApiAlias(): string
     {
-        return 'frosh_product_compare_cross_selling_comparable_collection';
+        return 'kware_product_compare_cross_selling_comparable_collection';
     }
 
     protected function getExpectedClass(): string

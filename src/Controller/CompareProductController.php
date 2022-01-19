@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Frosh\FroshProductCompare\Controller;
+namespace Kware\KwareProductCompare\Controller;
 
-use Frosh\FroshProductCompare\Page\CompareProductPageLoader;
+use Kware\KwareProductCompare\Page\CompareProductPageLoader;
 use Shopware\Core\Framework\Routing\Annotation\RouteScope;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
 use Shopware\Storefront\Controller\StorefrontController;
@@ -34,7 +34,7 @@ class CompareProductController extends StorefrontController
     public function comparePage(Request $request, SalesChannelContext $context): Response
     {
         $page = $this->genericPageLoader->load($request, $context);
-        return $this->renderStorefront('@FroshProductCompare/storefront/page/compare.html.twig', compact('page'));
+        return $this->renderStorefront('@KwareProductCompare/storefront/page/compare.html.twig', compact('page'));
     }
 
     /**
@@ -46,7 +46,7 @@ class CompareProductController extends StorefrontController
 
         $page = $this->compareProductPageLoader->load($productIds, $request, $context);
 
-        return $this->renderStorefront('@FroshProductCompare/storefront/component/compare/content.html.twig', ['page' => $page]);
+        return $this->renderStorefront('@KwareProductCompare/storefront/component/compare/content.html.twig', ['page' => $page]);
     }
 
     /**
@@ -58,6 +58,6 @@ class CompareProductController extends StorefrontController
 
         $page = $this->compareProductPageLoader->loadPreview($productIds, $request, $context);
 
-        return $this->renderStorefront('@FroshProductCompare/storefront/component/compare/offcanvas-compare-list.html.twig', ['page' => $page]);
+        return $this->renderStorefront('@KwareProductCompare/storefront/component/compare/offcanvas-compare-list.html.twig', ['page' => $page]);
     }
 }
