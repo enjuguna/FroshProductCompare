@@ -1,1 +1,1 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["kware-product-compare"],{SNxI:function(o,n){}},[["SNxI","runtime"]]]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([["kware-product-compare"],{AlBy:function(n,o){}},[["AlBy","runtime"]]]);
