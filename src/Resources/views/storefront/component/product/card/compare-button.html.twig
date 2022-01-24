@@ -5,12 +5,12 @@
         {% set addToCompareOptions = {
             productId: product.id,
             productName: product.name,
-            productNumber: product.number,
+            productPrice: product.price,
+            productNumber: product.product_number,
             showIconOnly: showIconOnly,
             defaultText: "kwareProductCompare.general.addToCompare"|trans|sw_sanitize,
             addedText: "kwareProductCompare.general.removeFromCompare"|trans|sw_sanitize
-        } %}
-        
+        } %}        
         {% block kware_product_compare_add_to_compare_button %}
             {% if showIconOnly %}
                 <button 

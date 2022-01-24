@@ -23,8 +23,8 @@
             "en-GB": "A WhatsApp plugin for Shopware 6"
         },
         "description": {
-            "de-DE": "Shopware 6 Bestellung über WhatApp Plugin",
-            "en-GB": "Shopware 6 order via WhatApp plugin."
+            "de-DE": "Kostenloses Open Source Plugin für Shopware 6. Ermöglicht es bis zu 4 Produkte miteinander zu vergleichen. Vergleichsliste auf der Produktvergleichsseite oder auf der Artikelseite.",
+            "en-GB": "Shopware 6 Order on WhatApp plugin."
         },
         "supportLink": {
             "de-DE": "https://kamsware.com",
