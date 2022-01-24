@@ -10,14 +10,11 @@
             defaultText: "kwareProductCompare.general.addToCompare"|trans|sw_sanitize,
             addedText: "kwareProductCompare.general.removeFromCompare"|trans|sw_sanitize
         } %}
-
-        {{ dump(product.price.elements)}}
-
         
         {% block kware_product_compare_add_to_compare_button %}
             {% if showIconOnly %}
                 <button 
-                        onclick="window.location.href='https://https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20information%20on%20this%20product%20{{product.name}}%20{{'product.price.elements'}}%3A%20';"
+                        onclick="window.location.href='https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20more%20information%20on%20this%20{{product.name}}%20{{product.productNumber}}%20%20going%20for%20%20KES.%20{{product.calculatedPrice.unitPrice}}%20.';"
                         class="btn btn-block btn-compare"
                         href="{{ seoUrl('frontend.detail.page', {'productId': product.id}) }}#review-tab-pane"
                         title="{{ "kwareProductCompare.general.addToCompare"|trans|striptags }}">
@@ -25,7 +22,7 @@
                 </button>
             {% else %}
                 <button 
-                        onclick="window.location.href='https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20information%20on%20this%20product%20{{product.name}}%20{{product.price.elements}}%3A%20';"
+                        onclick="window.location.href='https://api.whatsapp.com/send?phone=254798184724&text=Hello%2C%20I%20wanted%20more%20information%20on%20this%20{{product.name}}%20{{product.productNumber}}%20%20going%20for%20%20KES.%20{{product.calculatedPrice.unitPrice}}%20.';"
                         href="{{ seoUrl('frontend.detail.page', {'productId': product.id}) }}#review-tab-pane"
                         class="btn btn-block btn-compare"
                         title="{{ "kwareProductCompare.general.addToCompare"|trans|striptags }}">
