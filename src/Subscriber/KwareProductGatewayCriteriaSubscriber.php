@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Frosh\FroshProductCompare\Subscriber;
+namespace Kware\KwareProductCompare\Subscriber;
 
 use Shopware\Core\Content\Product\Events\ProductGatewayCriteriaEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-class FroshProductGatewayCriteriaSubscriber implements EventSubscriberInterface
+class KwareProductGatewayCriteriaSubscriber implements EventSubscriberInterface
 {
     public static function getSubscribedEvents()
     {

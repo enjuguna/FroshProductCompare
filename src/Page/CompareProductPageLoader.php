@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Frosh\FroshProductCompare\Page;
+namespace Kware\KwareProductCompare\Page;
 
 use Shopware\Core\Content\Product\Aggregate\ProductReview\ProductReviewCollection;
 use Shopware\Core\Content\Product\Aggregate\ProductReview\ProductReviewEntity;
@@ -195,10 +195,10 @@ class CompareProductPageLoader
         $productReviews = $this->loadProductReviews($products->getIds(), $context->getContext());
 
         $selectedProperties = [];
-        $showSelectedProperties = $this->systemConfigService->getBool('FroshProductCompare.config.showSelectedProperties', $context->getSalesChannelId());
+        $showSelectedProperties = $this->systemConfigService->getBool('KwareProductCompare.config.showSelectedProperties', $context->getSalesChannelId());
 
         if ($showSelectedProperties) {
-            $selectedProperties = $this->systemConfigService->get('FroshProductCompare.config.selectedProperties', $context->getSalesChannelId());
+            $selectedProperties = $this->systemConfigService->get('KwareProductCompare.config.selectedProperties', $context->getSalesChannelId());
             $selectedProperties = array_map(function ($property) {
                 return $property['id'];
             }, $selectedProperties);

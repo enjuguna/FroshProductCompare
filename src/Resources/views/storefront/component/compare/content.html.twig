@@ -1,7 +1,7 @@
-{% block frosh_product_compare_table_container %}
+{% block kware_product_compare_table_container %}
     <div class="comparison-table">
         {% set products = page.products %}
-        {% set hideAttributes = config('FroshProductCompare.config.hideAttributes') %}
+        {% set hideAttributes = config('KwareProductCompare.config.hideAttributes') %}
 
         {% set hideOverview = 'overview' in hideAttributes %}
         {% set hideDescription = 'description' in hideAttributes %}
@@ -15,13 +15,13 @@
         {% if productsCount is same as(0) %}
             {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
                 type: "info",
-                content: "froshProductCompare.general.empty"|trans|sw_sanitize
+                content: "kwareProductCompare.general.empty"|trans|sw_sanitize
             } %}
         {% else %}
-            {% block  frosh_product_compare_table %}
+            {% block  kware_product_compare_table %}
                 <table class="table table-bordered">
 
-                    {% block  frosh_product_compare_table_header %}
+                    {% block  kware_product_compare_table_header %}
                         <thead>
                             <tr>
                                 <td class="align-middle hide-on-print">

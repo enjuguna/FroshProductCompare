@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Frosh\FroshProductCompare;
+namespace Kware\KwareProductCompare;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\DBALException;
@@ -10,7 +10,7 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 
-class FroshProductCompare extends Plugin
+class KwareProductCompare extends Plugin
 {
     public function build(ContainerBuilder $container): void
     {
@@ -42,7 +42,7 @@ class FroshProductCompare extends Plugin
         $connection = $this->container->get(Connection::class);
 
         $connection->executeStatement('
-            DROP TABLE IF EXISTS frosh_cross_selling_comparable;
+            DROP TABLE IF EXISTS kware_cross_selling_comparable;
         ');
     }
 }

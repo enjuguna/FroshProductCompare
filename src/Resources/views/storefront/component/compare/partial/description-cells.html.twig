@@ -1,6 +1,6 @@
-{% block frosh_product_compare_description_cells %}
+{% block kware_product_compare_description_cells %}
     {% for product in products %}
-        {% block frosh_product_compare_description_cell %}
+        {% block kware_product_compare_description_cell %}
         <td>
             {{ product.translated.description|raw|striptags|u.truncate(250, '…') }}
         </td>
