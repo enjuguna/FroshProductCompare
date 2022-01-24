@@ -4,43 +4,5 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-
-        <!-- Entity Extension-->
-        <service id="Kware\KwareProductCompare\DAL\Extension\ProductCrossSellingEntityExtension">
-            <tag name="shopware.entity.extension"/>
-        </service>
-
-        <!-- Entity Definitions-->
-        <service id="Kware\KwareProductCompare\CrossSellingComparable\CrossSellingComparableDefinition">
-            <tag name="shopware.entity.definition" entity="kware_cross_selling_comparable"/>
-        </service>
-
-        <service id="Kware\KwareProductCompare\Page\CompareProductPageLoader">
-            <argument type="service" id="Shopware\Core\Content\Product\Cart\ProductGateway"/>
-            <argument type="service" id="Shopware\Storefront\Page\GenericPageLoader"/>
-            <argument type="service" id="Symfony\Component\EventDispatcher\EventDispatcherInterface" />
-            <argument type="service" id="product_review.repository" />
-            <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
-        </service>
-
-        <service id="Kware\KwareProductCompare\Controller\CompareProductController" public="true">
-            <argument type="service" id="Kware\KwareProductCompare\Page\CompareProductPageLoader"/>
-            <argument type="service" id="Shopware\Storefront\Page\GenericPageLoader"/>
-            <call method="setContainer">
-                <argument type="service" id="service_container"/>
-            </call>
-        </service>
-
-        <!-- Subscriber -->
-        <service id="Kware\KwareProductCompare\Subscriber\KwareCrossSellingProductListingSubscriber">
-            <argument type="service" id="Kware\KwareProductCompare\Page\CompareProductPageLoader"/>
-            <argument type="service" id="Shopware\Core\Content\Product\Cart\ProductGateway"/>
-            <tag name="kernel.event_subscriber"/>
-        </service>
-
-        <service id="Kware\KwareProductCompare\Subscriber\KwareProductGatewayCriteriaSubscriber">
-            <tag name="kernel.event_subscriber"/>
-        </service>
-
     </services>
 </container>
