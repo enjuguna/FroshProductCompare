@@ -4,6 +4,20 @@
     <card>
         <title>Order on Whatsapp Configuration</title>
         <title lang="de-DE">Bestellen Sie auf WhatsApp Konfiguration</title>
-        
+
+       
+        <input-field type="int">
+            <name>whatsappconfig</name>
+            <label>Whatsapp Contact</label>
+            <defaultValue>254</defaultValue>
+            <helpText>Start with 254 (Without the Plus)</helpText>
+        </input-field>
+
+        <input-field>
+            <name>whatsappmessage</name>
+            <label>Whatsapp Message</label>
+            <helpText>WhatsApp message to be sent</helpText>
+        </input-field>
+           
     </card>
 </config>
