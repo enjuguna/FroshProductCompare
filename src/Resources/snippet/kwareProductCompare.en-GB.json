@@ -1,38 +1,7 @@
 {
     "kwareProductCompare": {
         "general": {
-            "headline": "Compare products",
-            "addToCompare": "Order on Whatsapp",
-            "removeFromCompare": "Order on Whatsapp",
-            "maximumCompareProducts": "Maximum number of compare products is 4",
-            "empty": "No product is added to compare"
-        },
-        "offcanvas": {
-            "continueShopping": "Continue Shopping",
-            "header": "Products to Compare",
-            "compareNow": "Order Now"
-        },
-        "action": {
-            "print": "Print",
-            "clearAll": "Clear All"
-        },
-        "section": {
-            "overview": {
-                "title": "Overview",
-                "manufacturer": "Manufacturer",
-                "price": "Price",
-                "description": "Description",
-                "rating": "Rating",
-                "category": "Category"
-            },
-            "specification": {
-                "title": "Specification",
-                "manufacturer": "Manufacturer",
-                "price": "Price",
-                "description": "Description",
-                "rating": "Rating",
-                "category": "Category"
-            }
+            "orderViaWhatsapp": "Order on Whatsapp"
         }
     }
 }

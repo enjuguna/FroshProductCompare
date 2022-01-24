@@ -1,9 +1,0 @@
-{% block kware_product_compare_attribute_cells %}
-    {% for product in products %}
-        {% block kware_product_compare_attribute_cell %}
-            <td>
-                {{ attribute(product, attribute) }}
-            </td>
-        {% endblock %}
-    {% endfor %}
-{% endblock %}
